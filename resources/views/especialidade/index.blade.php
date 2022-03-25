@@ -26,14 +26,14 @@
 
                     <div class="card-body">
                         <div class="table-responsive">
-                            <table class="table table-striped mt-2">
+                            <table class="table table-striped mt-2" style="width:1200px">
                                 <thead style="background-color:#6777ef">
                                     <tr>
                                         <th style="color:#fff;">No</th>      
 										<th style="color:#fff;">Nombre</th>
-										<th style="color:#fff;">Descripcion</th>
-										<th style="color:#fff;">Fech Registro</th>
-										<th style="color:#fff;">Fech Modificacion</th>
+										<th style="color:#fff;">Descripción</th>
+										<th style="color:#fff;">Fecha Registro</th>
+										<th style="color:#fff;">Fecha Modificacion</th>
 										<th style="color:#fff;">Estado</th>
                                         <th style="color:#fff;">Aciones</th>
                                     </tr>

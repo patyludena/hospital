@@ -1,20 +1,16 @@
 @extends('layouts.app')
 
-@section('template_title')
-    {{ $especialidade->name ?? 'Show Especialidade' }}
-@endsection
-
 @section('content')
     <section class="content container-fluid">
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header">
+                    <div class="card-body">
                         <div class="float-left">
-                            <span class="card-title">Show Especialidade</span>
+                            <span class="card-title">Especialidades</span>
                         </div>
                         <div class="float-right">
-                            <a class="btn btn-primary" href="{{ route('especialidades.index') }}"> Back</a>
+                            <a class="btn btn-warning" href="{{ route('especialidades.index') }}"> Regresar</a>
                         </div>
                     </div>
 

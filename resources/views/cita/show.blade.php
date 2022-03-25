@@ -10,6 +10,9 @@
                         </div>
                         <div class="float-right">
                             <a class="btn btn-warning" href="{{ route('citas.index') }}"> Regresar </a>
+                            <br/>
+                                <a class = "btn btn-success btn-print" href = "javascript:window.print()" onclick = "window.print()"><i class ="glyphicon glyphicon-print"></i> Imprimir</a>  
+                          
                         </div>
                     </div>
 
@@ -29,7 +32,6 @@
                             <strong>Hora:</strong>
                             {{ $cita->hora }}
                         </div>
-
                     </div>
                 </div>
             </div>

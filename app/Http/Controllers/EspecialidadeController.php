@@ -11,6 +11,13 @@ use Illuminate\Http\Request;
  */
 class EspecialidadeController extends Controller
 {
+    function __construct()
+    {
+         $this->middleware('permission:ver-especialidad|crear-especialidad|editar-especialidad|borrar-especialidad', ['only' => ['index']]);
+         $this->middleware('permission:crear-especialidad', ['only' => ['create','store']]);
+         $this->middleware('permission:editar-especialidad', ['only' => ['edit','update']]);
+         $this->middleware('permission:borrar-especialidad', ['only' => ['destroy']]);
+    }
     /**
      * Display a listing of the resource.
      *

@@ -13,7 +13,7 @@
 
                 <div class="card card-default">
                     <div class="card-header">
-                        <span class="card-title">Update Cita</span>
+                        <span class="card-title">Actualizar Cita</span>
                     </div>
                     <div class="card-body">
                         <form method="POST" action="{{ route('citas.update', $cita->id) }}"  role="form" enctype="multipart/form-data">

@@ -12,6 +12,13 @@ use Illuminate\Http\Request;
  */
 class CitaController extends Controller
 {
+    function __construct()
+    {
+         $this->middleware('permission:ver-cita|crear-cita|editar-cita|borrar-cita', ['only' => ['index']]);
+         $this->middleware('permission:crear-cita', ['only' => ['create','store']]);
+         $this->middleware('permission:editar-cita', ['only' => ['edit','update']]);
+         $this->middleware('permission:borrar-cita', ['only' => ['destroy']]);
+    }
     /**
      * Display a listing of the resource.
      *
@@ -75,8 +82,8 @@ class CitaController extends Controller
     public function edit($id)
     {
         $cita = Cita::find($id);
-
-        return view('cita.edit', compact('cita'));
+        $especialidades = Especialidade::pluck('nombre','id');
+        return view('cita.edit', compact('cita', 'especialidades'));
     }
 
     /**

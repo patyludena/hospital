@@ -1,9 +1,9 @@
 <div class="box box-info padding-1">
-    <div class="box-body">
+    <div class="card-body">
         
         <div class="form-group">
             {{ Form::label('especialidad_id') }}
-            {{ Form::select('especialidad_id', $especialidades , $cita->especialidad_id, ['class' => 'form-control' . ($errors->has('especialidad_id') ? ' is-invalid' : ''), 'placeholder' => 'Especialidad Id']) }}
+            {{ Form::select('especialidad_id', $especialidades , $cita->especialidad_id, ['class' => 'form-control' . ($errors->has('especialidad_id') ? ' is-invalid' : ''), 'placeholder' => 'Seleccione la especialidad']) }}
             {!! $errors->first('especialidad_id', '<div class="invalid-feedback">:message</div>') !!}
         </div>
 
@@ -38,6 +38,6 @@
 
     </div>
     <div class="box-footer mt20">
-        <button type="submit" class="btn btn-primary">Guardae</button>
+        <button type="submit" class="btn btn-primary">Guardar</button>
     </div>
 </div>

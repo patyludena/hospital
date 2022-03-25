@@ -40,7 +40,7 @@
                                         </div>
                                     </div>                                                                
                                     
-                                    <div class="col-md-4 col-xl-4">
+                                   <div class="col-md-4 col-xl-4">
                                         <div class="card bg-c-pink order-card">
                                             <div class="card-block">
                                                 <h5>Especialidades</h5>                                               
@@ -61,4 +61,3 @@
         </div>
     </section>
 @endsection
-
